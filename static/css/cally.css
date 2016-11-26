@@ -2,6 +2,10 @@
     height: 100%;
     overflow: hidden;
 }
+.html-dashboard-doc {
+    height: 100%;
+    width: 98%;
+}
 body {
     /* Margin bottom by footer height */
     height: 100%;
@@ -69,6 +73,12 @@ thead {
 .container {
     margin-top: 30px;
 }
+
+.container-doc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .container-dashboard {
     margin-top: 20px;
     margin-left: 20px;
@@ -167,4 +177,15 @@ thead {
     max-width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+.stars {
+    margin:20px auto 1px;
 }
