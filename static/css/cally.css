@@ -1,0 +1,165 @@
+.html-dashboard {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    /* Margin bottom by footer height */
+    height: 100%;
+    margin-bottom: 50px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    background-color: #C9C9C9;
+    color: #ffffff;
+}
+thead {
+    background-color: #7E7F82;
+    color: #EDEDED;
+}
+.navbar-default {
+    background-color: #282C34;
+    border-color: #B6EFF6;
+    border-bottom-width: 5px;
+}
+.form-control {
+    margin: 5px;
+}
+
+/* title */
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+
+/* link */
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #B6EFF6;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #51555D;
+}
+
+.dropdown-brand, .dropdown-brand>li>a {
+    background-color: #51555D;
+    color: #fff;
+}
+
+.login-cover {
+    background: url(/static/images/lamp.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container {
+    margin-top: 30px;
+}
+.container-dashboard {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.row-widget {
+    margin-top: 10px;
+}
+.container-small-margin {
+    margin-top: 20px;
+}
+.container-edit-button {
+    padding-bottom: 20px;
+}
+.btn-space {
+    margin-right: 5px;
+}
+.btn-icon-text {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 5px;
+}
+.login-panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+}
+.login-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10%;
+}
+.register-panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.register-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 0px;
+    width: 80%;
+}
+.form-padding {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.text-theme-blue {
+    color: #00BCD4;
+}
+.text-theme-gray {
+    color: #8A8A8A;
+}
+.text-widget {
+    font-size: 5em;
+    text-align: center;
+}
+.map-container {
+    height: 100%;
+    padding-bottom: 80px;
+    padding-top: 20px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+#map {
+    height: 100%;
+}
+.dashboard-side {
+    float: left;
+    height: 100%;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}
+.select-width {
+  	margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.modal-three {
+    max-height: 300px;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.modal-one {
+    max-height: 200px;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
