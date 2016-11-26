@@ -40,13 +40,13 @@
         <div class="container-dashboard">
             <div class="row">
                 <h2 class="text-theme-gray">
-        <span class="glyphicon glyphicon-dashboard"></span> Dashboard</h2>
+        <span class="glyphicon glyphicon-dashboard"></span> Bids</h2>
             </div>
         </div>
         <div id="dashboard-content"></div>
     </div>
-    <div class="col-md-5 col-md-offset-7 map-container">
-        <div id="map"></div>
+    <div class="pull-right map-container">
+        <div id="map" style="height:100%"></div>
     </div>
     <footer class="navbar-fixed-bottom">
         <div class="container container-small-margin">
@@ -57,7 +57,17 @@
     <script type="text/babel" src="static/js/dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-jMWhUm8le3pKOCEnmc4FzM3A7iO78Yg&callback=initMap" async defer></script>
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(51.101023,16.9798389,12),
+                zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvveD-UHMji2_PbFfBfL0GQyucTR_Q0ds&callback=myMap"></script>
 </body>
 
 </html>
