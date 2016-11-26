@@ -1,73 +1,187 @@
 <!DOCTYPE html>
-<html class="html-dashboard">
+<html class="html-dashboard-doc">
 
 <head>
-    <title>Cally - Lead Forwarding System</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="static/css/cally.css">
-
+	<title>Cally - Lead Forwarding System</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel="stylesheet" type="text/css" href="static/css/countdown.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/details.css">
+	<link rel="stylesheet" type="text/css" href="static/css/countdown.css">
+	<link rel="stylesheet" type="text/css" href="static/css/cally.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-phone"></span> Mortgage Penguins</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarright">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">Bids</a></li>
-                    <li><a href="/calls">Transactions</a></li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li><a>Hi, Tomasz</a></li>
-                    <li><a href="/logout">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container"></div>
-    <div class="col-md-7 dashboard-side">
-        <div class="container-dashboard">
-            <div class="row">
-                <h2 class="text-theme-gray">
-        <span class="glyphicon glyphicon-dashboard"></span> Bids</h2>
-            </div>
-        </div>
-        <div id="dashboard-content"></div>
-    </div>
-    <div class="pull-right map-container">
-        <div id="map" style="height:100%"></div>
-    </div>
-    <footer class="navbar-fixed-bottom">
-        <div class="container container-small-margin">
-            <p class="text-center">Mortgage Penguins - Your eBay for Mortgages</p>
-        </div>
-    </footer>
-    <script src="/static/js/map.js"></script>
-    <script type="text/babel" src="static/js/dashboard.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script>
-        function myMap() {
-            var mapCanvas = document.getElementById("map");
-            var mapOptions = {
-                center: new google.maps.LatLng(51.101023, 16.9798389, 12),
-                zoom: 10
-            };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvveD-UHMji2_PbFfBfL0GQyucTR_Q0ds&callback=myMap"></script>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-phone"></span> Mortgage Penguins</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarright">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Bids</a></li>
+					<li><a href="docs.html">Transactions</a></li>
+					<li>
+						<a></a>
+					</li>
+					<li><a>Hi, Tomasz</a></li>
+					<li><a href="/logout">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-dashboard">
+		<div class="row">
+			<h2 class="text-theme-gray">
+
+				</h2>
+		</div>
+	</div>
+	<div class="col-md-8 col-md-offset-2">
+		<div class="row container-doc">
+			<div>
+				<div class="col-md-4">
+					<iframe width="284" height="146" src="https://w2.countingdownto.com/1610248" frameborder="0"></iframe>
+				</div>
+				<div class="col-md-4">
+					<h4 class="text-theme-blue text-center">
+							<span class="glyphicon glyphicon-dashboard"/> Best Current Bid
+					</h4>
+					<p class="text-theme-blue text-widget">
+						3.2%
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4 class="text-theme-blue text-center">
+							<span class="glyphicon glyphicon-dashboard"/> Number of Bidders
+					</h4>
+					<p class="text-theme-blue text-widget">
+						4
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="well">
+				<h1 class="text-center">Current Bids</h1>
+				<div class="list-group">
+					<a href="#" class="list-group-item active">
+						<div class="media col-md-3">
+							<figure class="pull-left">
+								<img class="media-object img-rounded img-responsive" src="static/images/home1.png" alt="placehold.it/350x250">
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<h4 class="list-group-item-heading">Jervis Apartment Dublin
+								City</h4>
+							<p class="list-group-item-text">Qui diam libris ei, vidisse incorrupte at mel. His euismod salutandi dissentiunt eu. Habeo offendit ea mea. Nostro blandit sea ea, viris timeam molestiae an has. At nisl platonem eum. Vel et nonumy gubergren, ad has tota facilis probatus. Ea legere
+								legimus tibique cum, sale tantas vim ea, eu vivendo expetendis vim. Voluptua vituperatoribus et mel, ius no elitr deserunt mediocrem. Mea facilisi torquatos ad.</p>
+						</div>
+						<div class="col-md-3 text-center">
+							<h2>
+								695 <small> euro/month </small>
+							</h2>
+							<button type="button" class="btn btn-danger btn-lg btn-block">
+								Lock bid</button>
+							<div class="stars">
+								<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<p>
+								Average 4.5 <small> / </small> 5
+							</p>
+						</div>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="media col-md-3">
+							<figure class="pull-left">
+								<img class="media-object img-rounded img-responsive" src="static/images/home2.png" alt="placehold.it/350x250">
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<h4 class="list-group-item-heading">List group heading</h4>
+							<p class="list-group-item-text">Eu eum corpora torquatos, ne postea constituto mea, quo tale lorem facer no. Ut sed odio appetere partiendo, quo meliore salutandi ex. Vix an sanctus vivendo, sed vocibus accumsan petentium ea. Sed integre saperet at, no nec debet erant, quo dico
+								incorrupte comprehensam ut. Et minimum consulatu ius, an dolores iracundia est, oportere vituperata interpretaris sea an. Sed id error quando indoctum, mel suas saperet at.</p>
+						</div>
+						<div class="col-md-3 text-center">
+							<h2>
+								750 <small> euro/month </small>
+							</h2>
+							<button type="button" class="btn btn-primary btn-lg btn-block">Lock bid
+							</button>
+							<div class="stars">
+								<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<p>
+								Average 3.9 <small> / </small> 5
+							</p>
+						</div>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="media col-md-3">
+							<figure class="pull-left">
+								<img class="media-object img-rounded img-responsive" src="static/images/home3.png" alt="placehold.it/350x250">
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<h4 class="list-group-item-heading">List group heading</h4>
+							<p class="list-group-item-text">Ut mea viris eripuit theophrastus, cu ponderum accusata consequuntur cum. Suas quaestio cotidieque pro ea. Nam nihil persecuti philosophia id, nam quot populo ea. Falli urbanitas ei pri, eu est enim volumus, mei no volutpat periculis. Est errem
+								iudicabit cu. At usu vocibus officiis, ad ius eros tibique appellantur.</p>
+						</div>
+						<div class="col-md-3 text-center">
+							<h2>
+								879 <small> euro/month </small>
+							</h2>
+							<button type="button" class="btn btn-primary btn-lg btn-block">Lock bid
+							</button>
+							<div class="stars">
+								<span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star-empty"></span>
+							</div>
+							<p>
+								Average 4.1 <small> / </small> 5
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="navbar-fixed-bottom">
+		<div class="container container-small-margin">
+			<p class="text-center">Mortgage Penguins - Your eBay for Mortgages
+			</p>
+		</div>
+	</footer>
+
+
+
+
+	<script src="/static/js/map.js"></script>
+	<script type="text/babel" src="static/js/dashboard.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+		function myMap() {
+			var mapCanvas = document.getElementById("map");
+			var mapOptions = {
+				center: new google.maps.LatLng(51.101023, 16.9798389, 12),
+				zoom: 10
+			};
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvveD-UHMji2_PbFfBfL0GQyucTR_Q0ds&callback=myMap"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="static/js/countdown.js"></script>
 </body>
 
 </html>
